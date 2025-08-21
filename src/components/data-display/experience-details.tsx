@@ -16,10 +16,11 @@ const ExperienceDetails = ({
   currentlyWorkHere,
   startDate,
   endDate,
+  job_summary,
   summary,
 }: ExperienceDetailsProps) => {
   return (
-    <Card className="mx-auto flex w-full max-w-4xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
+    <Card className="mx-auto flex w-full max-w-6xl flex-col justify-between gap-4 p-8 md:flex-row md:gap-8">
       <div className="max-md:order-1 md:w-1/4">
         <ImageWrapper
           src={logo}
@@ -28,9 +29,13 @@ const ExperienceDetails = ({
           className="max-w-[120px]"
         />
       </div>
-      <div className="flex flex-col gap-4 max-md:order-3 md:w-2/4">
+      <div className="flex flex-col gap-4 max-md:order-3 md:w-3/4">
         <Typography variant="subtitle" className="font-semibold text-gray-900">
           {position}
+        </Typography>
+
+        <Typography className="text-gray-700">
+          <strong>Summary: </strong> {job_summary}
         </Typography>
         <ul className="flex list-disc flex-col gap-2 md:gap-1">
           {summary?.map((sentence, index) => (
@@ -42,14 +47,14 @@ const ExperienceDetails = ({
       </div>
       <div className="max-md:order-2 md:w-1/4">
         <Typography className="text-gray-700 md:text-right">
-          {new Intl.DateTimeFormat('en-US', dateFormatOptions).format(
+          {new Intl.DateTimeFormat('en-UK', dateFormatOptions).format(
             startDate
           )}{' '}
           -{' '}
           {currentlyWorkHere
             ? 'Present'
             : endDate
-            ? new Intl.DateTimeFormat('en-US', dateFormatOptions).format(
+            ? new Intl.DateTimeFormat('en-UK', dateFormatOptions).format(
                 endDate
               )
             : 'NA'}

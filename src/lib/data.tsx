@@ -31,7 +31,7 @@ import {
   ExperienceDetails,
   ProjectDetails,
   TechDetails,
-  TestimonialDetails,
+  CertificationDetails,
 } from '@/lib/types';
 import { url } from 'inspector';
 
@@ -151,31 +151,33 @@ export const EXPERIENCES: ExperienceDetails[] = [
   {
     logo: LogoRebelEnergy,
     logoAlt: 'Rebel Energy logo',
-    position: 'Graduate Data Scientist',
+    position: 'Data Scientist',
     startDate: new Date(2024, 8),
     endDate: new Date(2024, 6),
     currentlyWorkHere: true,
+    job_summary:'As a Graduate Data Scientist at Rebel Energy Labs, I apply my expertise in AI and machine learning to develop innovative solutions that drive operational efficiency and enhance customer experience. My role involves building advanced data models, automating processes, and delivering actionable insights to support strategic decision-making.',
     summary: [
-      'Developed a Fish Counter for a seagrass re-wilding charity using YOLOv8/11 and ByteTrack, enabling accurate tracking of fish populations in restoration projects.',
-      'Build a full-stack exception management system using Django, TailwindCSS, Plotly, and Polars, reducing 20% of exceptions since release.',
-      'Performed business-facing data analysis using SQL and PySpark, engaging in requirement gathering to extract insights and optimize workflows based on stakeholder needs.',
-      'Designed and proposed a payment allocation model to improve the efficiency and accuracy of the business\'s bulk billing process, ensuring smoother payment handling and better financial management.',
-      'Managed and mentored data analysis interns, providing guidance and technical QA.',
-      'Conducted anomaly detection research, evaluating multiple techniques such as Isolation Forest, Autoencoders, Local Outlier Factor (LOF), and Clustering to enhance data-driven decision-making.',
-      'Engineered RegulationsLLM, an AI compliance assistant using LangChain, RAG, and prompt engineering that extracts insights from Ofgem regulations through a Streamlit interface, enabling non-regulatory teams to easily understand compliance requirements.',
+      'Computer Vision for Conservation:  Partnered with Rebel Restoration to develop a fish population monitoring system from underwater footage as part of a seagrass rewilding initiative. Trained object detection models (YOLOv8/YOLOv11) integrated with ByteTrack to explore automated species identification and tracking. The project demonstrated potential applications of computer vision in biodiversity restoration.',
+      'Exception Management System: Designed and deployed a Django-based enterprise exception & data quality platform that consolidated billing errors, customer data mismatches, and operational anomalies into a real-time dashboard (TailwindCSS, Plotly). Integrated 40+ SQL-driven data quality tests, enabling closure of 67,000+ quality issues within 2 months and giving operations instant visibility to fix root causes. Post-launch, open exceptions fell by 20% through improved transparency and ownership.',
+      'Business-Facing Data Analysis: Collaborated with the Supply team to deliver ad-hoc analyses and reporting pipelines via SQL and PySpark, working within Confluence (documentation) and Jira (task management). Produced actionable insights supporting operational decisions, including validation work on the commission model, and strengthened engagement between data and business teams.',
+      'Payment Allocation Model: Designed a framework to automate Rebel’s manual bulk billing payment allocation process, reducing reconciliation time and enhancing financial accuracy. Delivered a proposal to the Finance team outlining how SQL-driven rules could streamline allocation workflows, providing a blueprint for future implementation.',
+      'Regulations LLM: Built a prototype AI compliance assistant using Llama 3, LangChain, and retrieval-augmented generation (RAG), presented through a Streamlit web app. The system let non-specialists, including the Legal team, ask natural language questions about Ofgem regulations and instantly receive clear answers. This proof-of-concept demonstrated how advanced AI tools can simplify access to complex regulatory information across the business.',
+      'Anomaly Detection Research: Conducted research and implemented techniques for identifying irregularities in 19 million meter readings and billing transactions, performing benchmarking on Isolation Forest, Local Outlier Factor (LOF), autoencoders, and clustering methodologies. Applied an ensemble approach for anomaly detection, highlighting LOF as a particularly effective method for identifying unusual consumption patterns and operational errors in large-scale energy data.',
+      'Commission model:   Conducted a forensic reconstruction of Rebel’s commission framework during administration proceedings. Applied SQL and Python to rebuild receivables models, collaborating within a four-person data team to support external administrators. The analysis uncovered a £6M+ discrepancy, providing critical evidence of system gaps and informing creditor reporting.',
     ],
   },
 
   {
     logo: LogoCheckLens,
     logoAlt: 'CheckLens logo',
-    position: 'Computer Vision trainee',
+    position: 'Computer Vision Intern',
     startDate: new Date(2024, 3),
     endDate: new Date(2024, 6),
     currentlyWorkHere: false,
+    job_summary:'Worked within the Computer Vision team on real-time self-checkout systems, focusing on model training, data annotation, and evaluation to support object detection research.',
     summary: [
-      'Collaborated with the head of the Computer Vision team, gaining hands-on experience in object detection for self-checkout systems.',
-      'Applied deep learning techniques to develop a model capable of accurately detecting items in real-time.',
+      'Trained and evaluated YOLOv8 models on video frames from self-checkout systems, combining pre-labelled data with manually annotated items to improve model understanding.',
+      'Conducted firsthand data annotation and model performance assessment, gaining practical experience with object detection workflows and ML evaluation techniques.',
     ],
   },
 
@@ -186,9 +188,10 @@ export const EXPERIENCES: ExperienceDetails[] = [
     startDate: new Date(2019, 9),
     endDate: new Date(2019, 9),
     currentlyWorkHere: false,
+    job_summary:'Worked within the web development team to build a prototype interactive quiz application, focusing on front-end integration and API-based automated grading.',
     summary: [
-      'Shadowed employees in the web development division and gained an insight into project management and teamwork with other employees.',
-      'Developed a quiz website using HTML, CSS, and JS. The website extracted data from an API and automatically displays the quiz results.',
+      'Developed a dynamic quiz interface using HTML, CSS, and JavaScript, allowing users to answer questions and receive immediate feedback.',
+      'Integrated API calls to load questions and automatically grade responses, enabling a fully functional prototype for testing and demonstration.',
     ],
   },
 
@@ -228,14 +231,47 @@ export const PROJECTS: ProjectDetails[] = [
   },
   
 ];
-/*
-export const TESTIMONIALS: TestimonialDetails[] = [
+
+export const CERTIFICATIONS: CertificationDetails[] = [
   {
-    personName: 'Krisztian Gyuris',
-    personAvatar: AvatarKrisztian,
-    title: 'Founder - inboxgenie.io',
-    testimonial:
-      'Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.',
+    name: 'MSc Artificial Intelligence (Distinction)',
+    issuer: 'Queen Mary University of London',
+    date: new Date(2024, 8),
+    // credentialId: 'AI-2024-001',
+    // url: 'https://example.com/verify',
+    // logo: LogoUniversityLondon,
   },
-  
-];*/
+  {
+    name: 'BSc Computer Science (First Class Honours)',
+    issuer: 'Queen Mary University of London',
+    date: new Date(2023, 5),
+    // credentialId: 'CS-2023-001',
+    // url: 'https://example.com/verify',
+    // logo: LogoUniversity,
+  },
+  {
+    name: 'Python Django, the Practical Guide',
+    issuer: 'Udemy',
+    date: new Date(2024, 12),
+    // credentialId: 'UDEMY-DJANGO-001',
+    // url: 'https://www.udemy.com/certificate/example',
+    // logo: LogoUdemy,
+  },
+  {
+    name: 'Machine Learning Specialization',
+    issuer: 'Coursera',
+    date: new Date(2025, 6),
+    // credentialId: 'COURSERA-ML-001',
+    // url: 'https://www.coursera.org/account/accomplishments/specialization/example',
+    // logo: LogoCoursera,
+  },
+  {
+    name: 'Deep Learning Specialization',
+    issuer: 'Coursera',
+    date: new Date(2025, 7),
+    // credentialId: 'COURSERA-DL-001',
+    // url: 'https://www.coursera.org/account/accomplishments/specialization/example',
+    // logo: LogoCoursera,
+  },
+  // Add more certifications as needed
+];

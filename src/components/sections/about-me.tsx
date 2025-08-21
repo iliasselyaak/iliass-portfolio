@@ -31,7 +31,7 @@ const AboutMeSection = () => {
         {/* Content */}
         <div className="flex max-w-xl flex-col gap-6">
           <Typography className="text-lg md:text-xl lg:text-2xl leading-relaxed text-gray-800">
-            MSc Artificial Intelligence graduate with a First-Class Honours in Computer Science. At Rebel Energy Labs, I&apos;ve developed everything from fish-counting AI for environmental conservation to enterprise compliance assistants. My technical toolkit includes Python, computer vision, and machine learning, with a knack for turning complex problems into practical solutions. When not training neural networks, I&apos;m building user-friendly applications or improving data workflows. London-based problem-solver passionate about applying AI to create meaningful impact—just don&apos;t ask me to manually count fish anymore.
+            I hold an MSc in Artificial Intelligence and a First-Class Honours degree in Computer Science, applying advanced AI and machine learning to deliver real-world solutions. At Rebel Energy Labs, I’ve developed everything from fish-counting AI for environmental conservation to enterprise compliance assistants. My expertise includes Python, computer vision, and machine learning, with a focus on turning complex challenges into scalable, practical outcomes. Beyond training neural networks, I build user-friendly applications and optimise data workflows. Based in London, I’m passionate about applying AI to create meaningful impact—just don&apos;t ask me to manually count fish anymore.
           </Typography>
         </div>
       </div>

@@ -15,6 +15,7 @@ export type ExperienceDetails = {
   currentlyWorkHere?: boolean;
   startDate: Date;
   endDate?: Date;
+  job_summary?: string;
   summary: string[];
 };
 
@@ -26,9 +27,11 @@ export type ProjectDetails = {
   technologies: string[];
 };
 
-export type TestimonialDetails = {
-  personName: string;
-  personAvatar?: string | StaticImageData;
-  testimonial: string;
-  title: string;
+export type CertificationDetails = {
+  name: string;
+  issuer: string;
+  date: Date;
+  credentialId?: string;
+  url?: string;
+  logo?: string | StaticImageData;
 };
