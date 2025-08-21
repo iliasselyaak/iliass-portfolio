@@ -56,6 +56,10 @@ export const NAV_LINKS = [
     label: 'Contact',
     href: '#contact',
   },
+  {
+    label: 'Certifications',
+    href: '#certifications',
+  },
 ];
 
 export const SOCIAL_LINKS = [
