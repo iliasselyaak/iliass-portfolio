@@ -53,12 +53,12 @@ export const NAV_LINKS = [
     href: '#projects',
   },
   {
-    label: 'Contact',
-    href: '#contact',
-  },
-  {
     label: 'Certifications',
     href: '#certifications',
+  },
+  {
+    label: 'Contact',
+    href: '#contact',
   },
 ];
 
